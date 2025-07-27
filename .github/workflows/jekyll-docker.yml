@@ -1,0 +1,57 @@
+<!-- วิธีใส่รูป: ให้ใส่ไฟล์รูปไว้ใน Repository เดียวกับ index.html เวลาอัปขึ้น GitHub -->
+<!-- ตัวอย่าง: ถ้า index.html อยู่ตรงกลาง ให้ลากรูปมาใส่ในที่เดียวกัน -->
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commission Portfolio</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f8f8; color: #333; text-align: center;}
+    header {background: #222; color: white; padding: 30px 0;}
+    .profile img {width: 120px; height: 120px; border-radius: 50%; border: 3px solid white;}
+    .profile h1 {margin: 10px 0 5px;}
+    .gallery {padding: 40px 20px;}
+    .gallery .grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; max-width: 900px; margin: auto;}
+    .gallery img {width: 100%; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);}
+    .contact {background: #eee; padding: 30px 20px;}
+    .contact .links a {display: inline-block; margin: 10px; padding: 10px 20px; background: #222; color: white; text-decoration: none; border-radius: 5px; transition: 0.3s;}
+    .contact .links a:hover {background: #555;}
+    footer {background: #222; color: #aaa; padding: 10px 0; font-size: 14px;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profile">
+      <img src="profile.jpg" alt="Profile"><!-- ใส่ไฟล์รูปชื่อ profile.jpg ในโฟลเดอร์เดียวกับ index.html -->
+      <h1>ธณา(THANA012)</h1>
+      <p>ศิลปินคอมมิชชั่น | Digital Art</p>
+    </div>
+  </header>
+
+  <section class="gallery">
+    <h2>ผลงานคอมมิชชั่น</h2>
+    <div class="grid">
+      <img src="work1.jpg" alt="งาน1">
+      <img src="work2.jpg" alt="งาน2">
+      <img src="work3.jpg" alt="งาน3">
+      <img src="work4.jpg" alt="งาน4">
+    </div>
+    <!-- ใส่ไฟล์ work1.jpg, work2.jpg, work3.jpg, work4.jpg ในที่เดียวกันกับ index.html -->
+  </section>
+
+  <section class="contact">
+    <h2>ติดต่อคอมมิชชั่น</h2>
+    <div class="links">
+      <a href="https://twitter.com/yourname" target="_blank">Twitter</a>
+      <a href="https://facebook.com/yourname" target="_blank">Facebook</a>
+      <a href="mailto:yourmail@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ธณา(THANA012) | Commission Portfolio</p>
+  </footer>
+</body>
+</html>
